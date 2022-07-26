@@ -78,10 +78,18 @@ export const BoxImage = styled.div`
   align-items: center;
 `;
 
-export const TextSchedule = styled.h1`
+export const Cardescription = styled.div`
+    display: flex;
+    padding: 40px;
+`
+
+export const ButtonAddList = styled.button`
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
   line-height: 25px;
   margin-top: 10px;
+  border: none;
+
+  cursor: pointer;
 `;
