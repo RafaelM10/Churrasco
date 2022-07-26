@@ -18,7 +18,7 @@ interface AuthContextType {
 
 export const AuthContext = createContext({} as AuthContextType);
 
-export function AuthProvider({ children }: { children: React.ReactNode }) {
+export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   const navigate = useNavigate();
   const getUser = localStorage.getItem('@user-churras');
   const [user, setUser] = useState<User | null>(
@@ -52,7 +52,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       {children}
     </AuthContext.Provider>
   );
-}
+};
 
 export const useAuth = () => {
   return useContext(AuthContext);
