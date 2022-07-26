@@ -19,9 +19,8 @@ export const ModalContainer = styled.div<PropsModal>`
 
 export const ModalContent = styled.div`
   background-color: #fefefe;
-  margin: 15% auto;
+  margin: 14% 20%;
   border: 1px solid #888;
-  width: 100%;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -67,6 +66,7 @@ export const ModalContent = styled.div`
 
 export const ModalClose = styled.span`
   color: #aaa;
+  padding: 0 14px;
   text-align: right;
   font-size: 28px;
   font-weight: bold;
