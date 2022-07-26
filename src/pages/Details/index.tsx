@@ -2,14 +2,14 @@ import { useLocation } from 'react-router-dom';
 
 import { IChurras } from 'utils/types';
 
-interface LocationPlan {
+interface LocationProps {
   state: {
     churras: IChurras;
   };
 }
 
 function Details() {
-  const location = useLocation() as LocationPlan;
+  const location = useLocation() as LocationProps;
 
   const { churras } = location.state;
 
