@@ -27,6 +27,7 @@ export const ModalContent = styled.div`
 
   @media only screen and (max-width: 700px) {
     width: 100%;
+    margin: 20px 0;
   }
 
   input {
