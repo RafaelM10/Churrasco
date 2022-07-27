@@ -19,11 +19,15 @@ export const ModalContainer = styled.div<PropsModal>`
 
 export const ModalContent = styled.div`
   background-color: #fefefe;
-  margin: 14% 20%;
+  margin: 9% 36%;
   border: 1px solid #888;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
+
+  @media only screen and (max-width: 700px) {
+    width: 100%;
+  }
 
   input {
     padding: 2px 1.5rem;
