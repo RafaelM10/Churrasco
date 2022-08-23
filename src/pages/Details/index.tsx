@@ -1,7 +1,12 @@
 import { useLocation } from 'react-router-dom';
 import { convertMoney } from 'utils/format';
-
 import { IChurras } from 'utils/types';
+
+import {
+  Container,
+  Border,
+  Input} from './styles';
+
 
 interface LocationProps {
   state: {
