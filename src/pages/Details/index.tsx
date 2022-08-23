@@ -1,4 +1,5 @@
 import { useLocation } from 'react-router-dom';
+import { convertMoney } from 'utils/format';
 
 import { IChurras } from 'utils/types';
 
@@ -14,10 +15,27 @@ function Details() {
   const { churras } = location.state;
 
   return (
-    <>
-      <h1>teste</h1>
-      {console.log(churras)}
-    </>
+    <Container>
+      <Border>
+        <h1>{churras.date}</h1>
+        <p>{churras.name}</p>
+        <p>
+          {' '}
+          {convertMoney(
+            churras.people.reduce(
+              (partialSum, item) => partialSum + item.value,
+              0
+            )
+          )}
+        </p>
+        <Input>
+          <input type="text" />
+          <input type="text" />
+          <input type="text" />
+          <input type="text" />
+        </Input>
+      </Border>
+    </Container>
   );
 }
 
